@@ -1,0 +1,1 @@
+from charRecognition import Application

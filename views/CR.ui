@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface>
+  <object class="ttk.Labelframe" id="CharRecognition">
+    <property name="cursor">arrow</property>
+    <property name="height">200</property>
+    <property name="text" translatable="yes">Character Recognition</property>
+    <property name="width">250</property>
+    <layout>
+      <property name="column">0</property>
+      <property name="propagate">True</property>
+      <property name="row">0</property>
+    </layout>
+    <child>
+      <object class="tk.Canvas" id="drawCanvas">
+        <property name="background">#000000</property>
+        <property name="selectforeground">#ffffff</property>
+        <property name="width">230</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Frame" id="innerFrame">
+        <property name="height">300</property>
+        <property name="width">200</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">2</property>
+          <property name="sticky">w</property>
+        </layout>
+        <child>
+          <object class="ttk.Button" id="clear">
+            <property name="command">on_click_clear</property>
+            <property name="text" translatable="yes">Clear</property>
+            <property name="width">25</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="columnspan">2</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+              <property name="rowspan">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="predict">
+            <property name="command">on_click_predict</property>
+            <property name="compound">top</property>
+            <property name="text" translatable="yes">Predict</property>
+            <property name="width">25</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="predictedText">
+            <property name="font">{courier 10 pitch} 20 {}</property>
+            <property name="text" translatable="yes">Predicted Text
+</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">2</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
