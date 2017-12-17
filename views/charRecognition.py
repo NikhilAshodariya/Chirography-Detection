@@ -64,6 +64,8 @@ class Application:
 		''' Quit Button Callback'''
 		self.canvas.delete('all')
 		self.create_Canvas_Image()
+		self.predictedTextLabel.config(text=" ")
+
 
 		# self.master.quit()
 
